@@ -9,7 +9,7 @@ var name=document.forms["frm"]["name"].value;
 var contact=document.forms["frm"]["contact"].value;
 var email=document.forms["frm"]["mail"].value;
 var phoneno = /^\d{10}$/;
-var mailformat = /^\w+([\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; if(name=""){
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; if(name=""){
 alert("Name cannot be empty");
 return false;
 }
@@ -36,7 +36,7 @@ alert("Succesfully submitted");
 </head>
 <body style="text-align:center;">
 <b>Form Validation</b><br/><br/>
-<form name="frm" onsubmit="return validate()" <b>
+<form name="frm" onsubmit="return validate()"> <b>
 Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="text" name="name"><br/><br/> Mobile No:
 <input type="text" name="contact"><br/><br/> Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
